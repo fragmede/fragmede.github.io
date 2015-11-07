@@ -1,5 +1,6 @@
 # Site settings
 title: Blogity blog blog.
+name: samson
 email: fragmede_gh_pages@onepatchdown.net
 description: "blogidy blog blog"
 baseurl: ""
