@@ -27,6 +27,10 @@ The next command fires up $EDITOR with some prepared text that we need to edit. 
 
 > dch 
 
+Then, because the kernel is always special, we copy the changelog:
+
+> cp debian/changelog debian.master/changelog
+
 Next, build the source package, substituting in your key. (Use `gpg --list-secret-keys | head -3 | tail -1 | sed 's/^[^/]*\/\([^ ]*\) .*$/\1/'` to get it.) This assumes you have already setup your GPG key for launchpad.
 
 > dpkg-buildpackage -S -nc -sa -kXXXXXXXX --force-sign -I.git -I.gitignore -i '\\.git.\*'
