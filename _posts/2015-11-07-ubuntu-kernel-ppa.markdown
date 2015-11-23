@@ -5,11 +5,13 @@ date:   2015-11-07 11:54:00
 categories: ubuntu kernel ppa trim
 ---
 
-Notes on what I had to do as a kernel person in order to get this [TRIM disabling PPA][trim-disable-ppa] working.
+To preface, I'm fluent in git, and kernel stuff. I've been using Debian since before Ubuntu came around, and have made a .deb or two, but haven't really explored the Ubuntu kernel build process. The kernel has special packagine needs because multiple versions of the kernel want to exist on disk, in case the new version fails to boot. In order to accomodate this, there's a debian/ subdir and a debian.master/ subdir. I haven't really explored the ramifications of this past the bare minimum required to get it to work.
+
+These are my notes on what I had to do as a kernel person in order to take a simple patch that I wrote and end up with an Ubuntu PPA hosting a kernel with that patch. (The patch in question force disables TRIM, in case the hardware (an SSD) reports TRIM support but doesn't actually support it for some reason or other. [TRIM disabling PPA][trim-disable-ppa])
 
 Creating the PPA itself was pretty easy to point and click at launchpad.net, and getting the gpg key configured and setup wasn't too hard.
 
-However, even though I know git relatively well, how git interacts with the debian packaging scripts, and the PPA system was a mystery, so here are my notes on what I had to do in order to get a relatively simple patch uploaded to that PPA.
+However, even though I know git relatively well, how git interacts with the debian packaging scripts, and the PPA system was a mystery, so here are my notes on what I had to do in order to get a relatively simple patch uploaded to that PPA.aaaa
 
 First I checked out the tag I wanted to build on top of and started a branch:
 
@@ -23,13 +25,17 @@ Now for the packaging/PPA bits. First we reset everything.
 
     fakeroot debian/rules clean
 
-The next command fires up $EDITOR with some prepared text that we need to edit. Edit the version number to include ~branch-slug and change UNRELEASED to your Ubuntu codename (in this case, wily). I don't know about the urgency field, so I set it to 'low'. After the asterisk, put a short description of the changes.
+The next command fires up $EDITOR with some prepared text that we need to edit. The kernel, being the kernel, has a hack so the version number actually part of package name: linux-image-4.2.0-16-generic is the actual package name, with a version number of '4.2.0-16.19'. In order to be compatible with this hack, our custom version has to comply with debian package naming convention. Theres a bunch of bogus ABI check stuff (it doesn't *really* check the ABI) that I got tired of trying to work around, so for now just reuse the same version number.
+
+Edit the version number to be the same, and change 'UNRELEASED' to your Ubuntu codename (in this case, wily). urgency doesn't do much so I set it to 'low' (has a minor effect on the PPA build priority). After the asterisk, put a short description of the changes.
 
     dch 
 
-Then, because the kernel is always special, we copy the changelog:
+Then, because the kernel is special, we copy the changelog:
 
     cp debian/changelog debian.master/changelog
+
+You want the two changelog files to match, but the tools aren't polished enough to assert that they're the same. If they don't match, then you'll only find out hours later when some aspect of the PPA process fails relating to package versions. (I didn't try making it a sym/hard link, so that might work.)
 
 Next, build the source package, substituting in your key. (Use `gpg --list-secret-keys | head -3 | tail -1 | sed 's/^[^/]*\/\([^ ]*\) .*$/\1/'` to get it.) This assumes you have already setup your GPG key for launchpad.
 
