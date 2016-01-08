@@ -23,3 +23,4 @@ Debian, or more specifically, apt, showed me how much easier computers could
 be, as well as a real-world application that CS101 application stuff (package
 version dependency resolution).
 
+[Debian's memorial](https://bits.debian.org/2015/12/mourning-ian-murdock.html)
