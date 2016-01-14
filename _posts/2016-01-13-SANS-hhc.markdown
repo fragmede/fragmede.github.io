@@ -1,0 +1,18 @@
+---
+layout: post
+title: SANS Holiday Hack Challenge 
+date:   2016-01-13 21:32:00 PST
+categories: sans hhc hack
+---
+
+[2015 SANS Holiday Hack Challenge](https://holidayhackchallenge.com/) is a intro hacking game that ran Christmas 2015. The 5th challenge involved involved was best solved using [binjitsu](https://github.com/binjitsu/binjitsu/) which is a library for exploit development.
+
+Here's my solution for SG05:
+{% gist b86e38ffa5c9fa342f76 %}
+
+A couple of notes.
+
+* The source for `sgstatd` was available on SG01, which made the task easier.
+* A precompiled binary for `sgstatd` was given in the firmware. (Even thought eh majority of the firmware was ARM, the provided `sgstatd` was compiled for 32-bit X86.)
+* Needed to use the latest version of Radare2. Ubuntu Wily's 0.9.6-3.1ubuntu1 version was too old.
+
