@@ -1,0 +1,11 @@
+---
+layout: post
+title: Future IDEs
+date:   2017-10-19 08:47:00 PST
+categories: IDE
+---
+
+[Bret Victor - Inventing on Principle](https://vimeo.com/36579366)
+
+This talk starts off showing better IDE features (that it seems VSCode has picked up on - at least the color picker), but then continues on to a level of philosophy that I also believe.
+
