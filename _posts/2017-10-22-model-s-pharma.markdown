@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Model S of Pharmaceuticals
-date:   2017-10-19 08:30:00 PST
+date:   2017-10-22 07:08:00 PST
 categories: pharmaceuticals
 ---
 
