@@ -1,7 +1,7 @@
 ---
 layout: post
-title: asldkfasd
-date:   2017-10-19 08:30:00 PST
+title: title goes here
+date:   1970-01-01 00:00:00 PST
 categories: 
 ---
 
