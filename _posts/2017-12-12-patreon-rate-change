@@ -1,0 +1,19 @@
+---
+layout: post
+title: Patreon rate change
+date: 2017-12-12 00:51:00 PST
+categories: patreon
+---
+Disclaimer: I work at Stripe (Patreon's payment processor), but not in the sales department.
+
+Patreon announced a “small fee-structure change” that turned into a big deal. They originally positioned it as a way to “get more money to creators” except that didn’t _really_ play out, so they updated the message to give slightly more technical reasoning.
+
+Unfortunately, it seems like Patreon doesn’t understand that aggregation of charges to avoid CC fees is one of few reasons to actually use Patreon - a batch of ten $1 charges from me is worth far more than zero $10 charges. The batching is what lets me donate $1 usefully; those add up.
+
+Of course, Patreon CEO Jack Conte **has** to realize this, but they still pushed on with this particular plan for some reason, and someone found [past statements](https://brianbalfour.com/essays/patreon-onboarding-growth) about preferring a fewer whale-sized patrons over a larger number of smaller patrons. It does make a certain amount of business sense, as it takes a lot more $1 charges than it does $100 to add up to “life-changing amounts of money” for a creator.
+
+Patreon (currently) charges an unknown, variable amount of processing fee each month, documented as 2%-10%, meaning it’s not clear for a creator how much they’ll end up with at the end of the month.
+
+If Patreon wants to fix something, fix *that*!
+
+There may be few creators on the platform who will ever make “life-changing amounts” - or at least the kind that comes to mind when thinking about winning a multi-million dollar lottery. But for many, a dependable $1000/month, or even $300/month is life changing.
