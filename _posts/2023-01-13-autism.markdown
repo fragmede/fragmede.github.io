@@ -15,7 +15,7 @@ In particular, I’d like to contribute by suggesting we use a Kiviat diagram, o
 
 Here's a Kiviat diagram of a totally normal neurotypical person, my interpretation of my most neurotypical friend, and then there’s me.
 
-![Kiviat diagram](https://i.imgur.com/rDhJ0rX.pn://i.imgur.com/rDhJ0rX.png)
+![Kiviat diagram](/assets/kiviat-autism.png)
 
 As we see in the sensory processing category, my friend M is "a little bit autistic" with regards to sensory processing while being normal in the rest. Just that sometimes they don’t hear when someone says something. But it’s minor and doesn’t cause any real problems for them in life. In comparison, I’m a lot “a bit autistic”, and my brain and body cause me an inordinate amount of distress on a daily basis.
 
