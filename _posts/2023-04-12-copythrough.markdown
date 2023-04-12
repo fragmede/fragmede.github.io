@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Copythrough: An evolution of Copyright
+title: Copythrough - An evolution of Copyright
 date:   2023-04-12 01:01:00 PST
-categories: 
+categories: society
 ---
 
 Copythrough
