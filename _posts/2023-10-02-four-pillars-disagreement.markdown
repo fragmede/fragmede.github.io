@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Four Pillars of Disagreement.
+title: Four Pillars of Disagreement
 date: 2023-10-02 17:00:00 PST
 categories: philosophy
 ---
