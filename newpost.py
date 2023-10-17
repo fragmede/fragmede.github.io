@@ -7,7 +7,7 @@ full_date = datetime.datetime.now().strftime('%Y-%m-%d %H:%m:%d PST')
 
 title = input("Title with spaces")
 
-hyphened_title = '-'.join(title.split())
+hyphened_title = '-'.join([x.lower() for x in title.split()])
 
 with open('_posts/TEMPLATE.markdown', 'r') as file:
     lines = file.readlines()
