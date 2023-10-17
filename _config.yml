@@ -11,3 +11,5 @@ github_username: fragmede
 # Build settings
 markdown: kramdown
 permalink: pretty
+plugins:
+  - jekyll-sitemap
