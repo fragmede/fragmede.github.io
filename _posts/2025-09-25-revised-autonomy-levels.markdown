@@ -5,6 +5,8 @@ date: 2025-09-25 12:00:00 PST
 categories: autonomy self-driving technology
 ---
 
+The current SAE levels for driving automation jump from "driver assistance" to "partial automation" to "conditional automation" without capturing the nuanced progression of capabilities that actually matter for safety and real-world deployment. Here's a more granular framework that better reflects the technical challenges and safety milestones in the journey toward full autonomy.
+
 ## Level 0: No Automation
 
 Human does everything
