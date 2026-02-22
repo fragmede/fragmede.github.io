@@ -43,6 +43,18 @@ That distinction matters:
 
 Related concepts, not equivalent guarantees.
 
+## Compiler Contract: Semantics, Not Byte Identity
+
+The commenter is right on this point: compilers are expected to preserve semantics. For programs with defined behavior, the output should be observationally equivalent to the source language's abstract machine.
+
+That means instruction order, register choice, inlining strategy, and block layout are fair game as long as externally visible behavior stays the same. In practice, "visible behavior" means things like I/O effects, volatile accesses, atomic synchronization guarantees, and defined return values, not byte-for-byte instruction identity.
+
+Important caveats:
+
+- undefined behavior weakens or voids the semantic guarantee
+- timing, microarchitectural side channels, and exact memory layout are usually outside the core language contract
+- reproducible builds are a stricter goal than semantic preservation (same bits, not just same behavior)
+
 ## Where Entropy Comes From
 
 - `__DATE__`, `__TIME__`, `__TIMESTAMP__`
