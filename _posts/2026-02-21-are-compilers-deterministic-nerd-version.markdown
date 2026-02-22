@@ -7,7 +7,7 @@ categories:
 
 Betteridge says “no,” and for normal developer experience that answer is mostly right. (Also, you’re absolutely right! and here’s an em—dash so that you know that I used ChatGPT to help me write this.
 
-Here’s my take. The computer science answer: a compiler is deterministic as a function of its full input state. Engineering answer: most real builds do not control the full input state, so outputs drift.
+Here’s my take. There's a computer science answer and an engineering answer. The computer science answer: a compiler is deterministic as a function of its full input state. Engineering answer: most real builds do not control the full input state, so outputs drift.
 
 I worked at Ksplice back in the 2000s, where we patched running Linux kernels in RAM so you could take security updates without rebooting. Reading `objdump` output of crashy kernels was not daily routine, but I had to do it often enough that "compiler output versus source intent" stopped being theoretical.
 
