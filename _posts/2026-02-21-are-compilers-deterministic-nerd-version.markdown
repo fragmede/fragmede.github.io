@@ -62,7 +62,7 @@ ASLR note: ASLR does not directly randomize the emitted binary. It randomizes pr
 
 So "compilers are deterministic" is often true in a theorem sense and false in an operational sense.
 And even with reproducible artifacts, Ken Thompson's [Reflections on Trusting Trust](https://aeb.win.tue.nl/linux/hh/thompson/trust.html) still applies.
-Also, compilers are not new tech: [Grace Hopper](https://en.wikipedia.org/wiki/Grace_Hopper)'s [A-0 system](https://en.wikipedia.org/wiki/A-0_System) dates to 1952 on UNIVAC.
+Also, compilers are not new tech: [Grace Hopper](https://en.wikipedia.org/wiki/Grace_Hopper)'s [A-0 system](https://en.wikipedia.org/wiki/A-0_System) dates to 1952 on [UNIVAC](https://en.wikipedia.org/wiki/UNIVAC_I).
 
 ## Reproducible Builds: Deliberate Engineering
 
