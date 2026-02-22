@@ -5,7 +5,7 @@ date: 2026-02-21 16:02:21 PST
 categories: 
 ---
 
-Betteridge says “no,” and for normal developer experience that answer is mostly right. (Also, you’re absolutely right! and here’s an em—dash so that you know that I used ChatGPT to help me write this.
+Betteridge says "no," and for normal developer experience that answer is mostly right. (Also, you’re absolutely right! and here’s an em—dash so that you know that I used ChatGPT to help me write this.)
 
 Here’s my take. There's a computer science answer and an engineering answer. The computer science answer: a compiler is deterministic as a function of its full input state. Engineering answer: most real builds do not control the full input state, so outputs drift.
 
