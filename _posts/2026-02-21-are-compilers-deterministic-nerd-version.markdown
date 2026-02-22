@@ -33,7 +33,7 @@ Most teams hold only `source` and maybe `flags` constant, then call everything e
 
 I learned this hard at Ksplice in the 2000s. We generated rebootless Linux kernel updates by diffing old vs new compiled output and stitching hot patches into live kernel memory. Most diffs mapped cleanly to changed C. Sometimes they exploded for reasons that were not semantic source changes: register allocation differences, altered pass behavior, section/layout changes. Same intent, different machine code.
 
-If you want a concrete historical artifact, GCC bug 18574 has a [gcc-bugs thread](https://gcc.gnu.org/pipermail/gcc-bugs/2004-November/139548.html) calling out pointer-hash instability affecting traversal order and SSA coalescing.
+If you want a concrete historical artifact, GCC bug 18574 has a [gcc-bugs thread](https://gcc.gnu.org/pipermail/gcc-bugs/2004-November/139548.html) calling out pointer-hash instability affecting traversal order and [SSA coalescing](https://gcc.gnu.org/wiki/SSA%20Pressure%20Reduction).
 
 That distinction matters:
 
