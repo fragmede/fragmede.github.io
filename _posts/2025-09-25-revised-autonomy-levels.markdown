@@ -28,7 +28,7 @@ Handles stop-and-go traffic
 Can come to complete stop and resume without intervention
 Has basic object detection (car ahead stopped = stop)
 CANNOT change lanes or route around obstacles
-This is where [Comma.ai](http://comma.ai), Blue Cruise, and others are at.
+This is SAE Level 2 today, but it's a meaningful milestone on the path to SAE Level 3/4.
 
 ## Level 4: Full Highway Navigation & Basic object recognition.
 
@@ -61,7 +61,7 @@ Handles unmapped roads and novel situations
 Matches or exceeds best human driver in all scenarios
 
 ## Commentary
-Level 3 is here, today. Comma.ai very capabily drives me down the freeway with much less cognitive burden. If you spend long amounts of time driving, you should get one. If your car does not support it, upgrade your car. (I'm not being paid to say that, just a happy customer.) It doesn't integrate with GPS so you'll miss the freeway exit if you don't pay attention.
+Comma.ai very capabily drives me down the freeway with much less cognitive burden. If you spend long amounts of time driving, you should get one. If your car does not support it, upgrade your car. (I'm not being paid to say that, just a happy customer.) It doesn't integrate with GPS so you'll miss the freeway exit if you don't pay attention.
 
 Meanwhile, Waymo is better than 4, but it's unclear exactly how much further it is. From experience riding in them, the Waymo Driver is already at 5, and some parts of 6.
 
